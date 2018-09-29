@@ -251,6 +251,20 @@
 		float:left;
 		height: 100%;
 		width: 200px;
+		border-radius:5%;
+	}
+	.fdiv>div>table{
+		margin-top:10px;
+		margin-left:10px;
+		color: white;
+		
+	}
+	.fdiv>div>table progress {
+		height: 4px;
+		text-align: 
+	}
+	.bigspan {
+		font-size: 25px;
 	}
 	.fdiv1 {
 		background-color: red;
@@ -328,14 +342,34 @@
 			<div class="fdiv">
 				<div class="fdiv1">
 					<table>
-						<tr><td rowspan="2"><i></i></td><td><span>就餐已有</span></td></tr>
-						<tr><td><span>5</span></td></tr>
+						<tr><td rowspan="2"><i class="iconfont2 icon-duoren"></i></td><td><span>就餐已有</span></td></tr>
+						<tr><td><span class="bigspan">5</span></td></tr>
 						<tr><td colspan="2">rrrrrrr</td></tr>
 					</table>
 				</div>
-				<div class="fdiv2"></div>
-				<div class="fdiv3"></div>
-				<div class="fdiv4"></div>
+				<div class="fdiv2">
+					<table>
+						<tr><td rowspan="2"><i class="iconfont2 icon-gouwu"></i></td><td><span>今日生日</span></td></tr>
+						<tr><td><span class="bigspan">5</span></td></tr>
+						<tr><td colspan="2">rrrrrrr</td></tr>
+					</table>
+				</div>
+				<div class="fdiv3">
+					<table>
+						<tr><td rowspan="2"><i class="iconfont2 icon-meiyuan"></i></td><td><span>营业利润</span></td></tr>
+						<tr><td><span class="bigspan">310502</span></td></tr>
+						<tr><td colspan="2" valign="middle">
+							<span class="thispan">THIS MONTH PLAN %</span>
+							<progress value="85" max="100">ss</progress></td></tr>
+					</table>
+				</div>
+				<div class="fdiv4">
+					<table>
+						<tr><td rowspan="2"><i class="iconfont2 icon-yanjing"></i></td><td><span>员工人数</span></td></tr>
+						<tr><td><span class="bigspan">30</span></td></tr>
+						<tr><td colspan="2">rrrrrrr</td></tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
