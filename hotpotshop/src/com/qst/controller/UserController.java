@@ -1,6 +1,7 @@
 package com.qst.controller;
 
 import javax.servlet.http.HttpSession;
+import javax.swing.JOptionPane;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -27,5 +28,18 @@ public class UserController {
 			mv.addObject("user", user);
 		}		
 		return mv;
+	}
+	
+	@RequestMapping("/register.do")
+	public ModelAndView register(User user,HttpSession session){
+		ModelAndView mv = new ModelAndView();
+		if (userService.register(user)) {
+			System.out.println("12");
+			JOptionPane.showMessageDialog(null, "注册成功，欢 迎 登 陆 ");
+			mv.setViewName("login");
+		}
+		
+		return mv;
+		
 	}
 }

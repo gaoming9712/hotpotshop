@@ -21,7 +21,7 @@
 				<input type="checkbox" class="ninput">Remember me<br><br><br><br>
 				<input type="submit" value="Login" class="tinput">
 				<input type="reset" value="Reset" class="tinput"><br><br><br><br><br>
-				<a href="" class="a_class">没有账号，去注册</a>
+				<a href="jsp/register" class="a_class">没有账号，去注册</a>
 			</form>			
 		</div>
 	</div>

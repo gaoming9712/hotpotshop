@@ -3,6 +3,7 @@ package com.qst.serviceimpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.qst.dao.UserDao;
 import com.qst.model.User;
@@ -21,4 +22,14 @@ public class UserServiceImpl implements UserService {
 		}
 		return false;
 	}
+	
+	@Override
+	
+	public boolean register(User user){
+		if(userDao.register(user)){
+			return true;
+		}
+		return false;
+	}
+	
 }

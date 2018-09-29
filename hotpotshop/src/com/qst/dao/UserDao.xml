@@ -4,4 +4,8 @@
 	<select id="login" parameterType="com.qst.model.User" resultType="com.qst.model.User">
 		select * from tb_user where username=#{username} and password=#{password}
 	</select>
+	
+	<insert id="register" parameterType="com.qst.model.User" >
+	   insert into tb_user(username,password) values(#{username},#{password});
+	</insert>
 </mapper>
